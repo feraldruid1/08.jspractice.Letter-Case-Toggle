@@ -1,9 +1,18 @@
-let      str="Brown fox";
-for (let elem of str) {
-    if(elem===elem.toUppercase()){
-        console.log("b")
-         }
-    if(elem===elem.toLowercase()){
-        console.log("r")
-       }
+let str = "Brown fox";
+let array = [];
+let count = 0;
+function caseTogler(text) {
+  for (let elem of text) {
+    if (elem === elem.toUpperCase()) {
+      elem = elem.toLowerCase();
+      array.push(elem);
+    } else {
+      elem = elem.toUpperCase();
+      array.push(elem);
+    }
+    count++;
+  }
+  str = array.join("");
+  console.log(str);
 }
+caseTogler(str);
