@@ -13,6 +13,6 @@ function caseTogler(text) {
     count++;
   }
   str = array.join("");
-  console.log(str);
+  return str;
 }
-caseTogler(str);
+console.log(caseTogler(str));
